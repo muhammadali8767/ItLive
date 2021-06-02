@@ -17,19 +17,19 @@ class StartController extends Controller
 
     public function cources()
     {
-        $courses = Course::all();
+        $courses = Course::paginate(6);
         return view('start.cources', compact('courses'));
     }
 
     public function team()
-    {        
-        $teams = Team::all();
+    {
+        $teams = Team::paginate(6);
         return view('start.team', compact('teams'));
     }
 
     public function blog()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::paginate(6);
         return view('start.blog', compact('blogs'));
     }
 }

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
 <!-- ======= Starting_Header ======= -->
     <header>
         <div class="header_menu">
@@ -43,123 +43,25 @@
     <div class="container">
         <div class="row py-5">
 
+            @foreach($blogs as $blog)
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
                 <div class="NewCategory">
-                    <img src="./images/blog.png" alt="img eror">
+
+                    <img src="./images/blog3.png" alt="img eror">
+                    {{-- <img src="{{ $blog->featured_image }}" alt="img eror"> --}}
                     <div class="time pr-1 pl-1 mt-3 ">
                         <p>Category</p>
-                        <p>01.01.2021</p>
+                        <p>{{$blog->created_at}}</p>
                     </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="./Singleblog.html">Read more</a>
+                    <h4 class="mb-3">{{$blog->title}}</h4>
+                    <p class="mb-4">{{$blog->text}}</p>
+                    <a href="#">Read more</a>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog1.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog3.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3 ">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="./Singleblog.html">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog1.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog3.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3 ">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="./Singleblog.html">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog1.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2 mb-lg-4">
-                <div class="NewCategory">
-                    <img src="./images/blog3.png" alt="img eror">
-                    <div class="time pr-1 pl-1 mt-3">
-                        <p>Category</p>
-                        <p>01.01.2021</p>
-                    </div>
-                    <h4 class="mb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV.</h4>
-                    <p class="mb-4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                    <a href="#!">Read more</a>
-                </div>
-            </div>
-
+            @endforeach
         </div>
+        <div class="row justify-content-center">{{ $blogs->links() }}</div>
     </div>
 <!-- ======= End_Blog ======= -->
 

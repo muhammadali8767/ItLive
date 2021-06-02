@@ -8,6 +8,6 @@ $factory->define(App\Models\Blog::class, function (Faker $faker) {
         'title' => $faker->title,
         'text' => $faker->text,
         'featured_image' => $faker->image,
-        'user_id' => $faker->randomDigit
+        'user_id' => $faker->randomDigitNotNull
     ];
 });
